@@ -1,0 +1,118 @@
+body {
+   font-family: "Montserrat" , sans-serif;
+   margin: 0 auto;
+   box-sizing: border-box;  
+   width: 100%;
+   overflow-y: hidden;
+   background-image: radial-gradient(#fff8ce, #ffb61d);
+}
+
+#wrapper{
+    width: 90%;
+    max-width: 1340px;
+    margin: auto;
+}
+
+header{
+    padding: 50px 0;
+    margin-bottom: 60px;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+section{
+    width: 50%;
+}
+
+section h1{
+    font-size: 4.8em;
+}
+
+section h1 strong{
+    color: rgb(197, 0, 0);
+}
+
+section p{
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+.btn{
+    padding: 14px 14px;
+    background-color: #031d44;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.btn:hover{
+    background-color: #173766;
+}
+
+form input{
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #28293e;
+    background-color: transparent;
+    margin-right:5px ;
+}
+
+.animation{
+    position: relative;
+}
+
+.animation img{
+    position: absolute;
+}
+
+
+.animation img:nth-child(1){
+    top: 150px;
+    left: -670px;
+    animation: topleft 2s infinite alternate;
+}
+
+.animation img:nth-child(2){
+    top: 50px;
+    left: -200px;
+    animation: topleft 2s infinite alternate;
+}
+
+.animation img:nth-child(3){
+    top: 0px;
+    left: -600px;
+    animation: topleft 2s infinite alternate;
+}
+
+.animation img:nth-child(4){
+    bottom: 10px;
+    left: -520px;
+    animation: topleft 4s .5s infinite alternate;
+}
+
+.animation img:nth-child(5){
+    top: -80px;
+    left: -550px;
+}
+
+.animation img:nth-child(6){
+    bottom: 100px;
+    left: -220px;
+}
+
+
+
+@keyframes topleft{
+    from{
+        transform: translate(0, 0);
+    }
+    to{
+        transform: translate(-10, -30);
+    }
+}
